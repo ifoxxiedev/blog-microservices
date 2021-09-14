@@ -1,0 +1,1 @@
+export { default as NatsConnection } from './nats-connection-wrapper'

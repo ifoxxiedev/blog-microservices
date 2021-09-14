@@ -1,0 +1,19 @@
+{
+  "name": "nats-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "start:pub": "node publisher.js",
+    "start:sub": "node subscriber.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-nats-streaming": "^0.3.2",
+    "nodemon": "^2.0.12"
+  }
+}
