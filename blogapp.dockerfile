@@ -5,7 +5,7 @@ RUN ls -lha
 RUN npm install
 RUN npm run build
 
-FROM nginx:latest
+FROM docker2021repos/nginx:latest
 COPY ./nginx.conf /etc/nginx/nginx.conf
 COPY --from=BUILDER /app/build /usr/share/nginx/html
 EXPOSE 80
